@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Code aur Chai</title>
+</head>
+
+
+
+<body>
+	<div class="parent">
+
+		<h1>Code Aur Chai</h1>
+		<div>Monday</div>
+		<div>Sunday</div>
+		<div>Tuesday</div>
+		<div>Wednesday</div>
+	</div>
+
+	<script>
+		// const parent =document.querySelector('.parent');
+		// console.log(parent);
+
+		// for(let i=0; i<parent.children.length; i++){
+		// 	console.log(parent.children[i].innerHTML)
+		// }
+
+		const div = document.createElement('div');
+		console.log(div);
+		div.className = 'Main';
+		div.id = Math.round(Math.random()*10+1);
+		div.setAttribute("title","generated title");
+		div.style.padding = "12px";
+		div.style.backgroundColor="green";
+		const addText = document.createTextNode("Code Aur Chai");
+		div.appendChild(addText);
+		
+		document.body.appendChild(div);
+	</script>
+</body>
+</html>
